@@ -9,6 +9,7 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     dnsmasq \
     ipsec-tools \
     iptables \
+    openssl \
     procps \
     strongswan \
     udev-extraconf \
