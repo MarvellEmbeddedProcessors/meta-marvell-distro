@@ -1,6 +1,8 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-SRC_URI += "file://iptables.rules"
+SRC_URI_append_clearfog = " \
+    file://iptables.rules \
+"
 
 do_install_append_clearfog() {
     install -d ${D}${sysconfdir}/iptables
