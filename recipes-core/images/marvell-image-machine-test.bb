@@ -18,4 +18,5 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     qemu \
     strongswan \
     iptables \
+    netmap-marvell-prv \
 "
