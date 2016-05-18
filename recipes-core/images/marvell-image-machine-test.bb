@@ -1,7 +1,10 @@
 DESCRIPTION = "A console-only image with applications for test"
 LICENSE = "MIT"
 
-IMAGE_FEATURES += "ssh-server-openssh"
+IMAGE_FEATURES += "\
+    ssh-server-openssh \
+    tools-profile \
+"
 
 inherit core-image
 
