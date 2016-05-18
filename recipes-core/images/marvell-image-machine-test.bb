@@ -17,4 +17,5 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     libvirt \
     qemu \
     strongswan \
+    iptables \
 "
