@@ -18,4 +18,6 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     qemu \
     strongswan \
     iptables \
+    eip197-marvell-prv-us \
+    eip197-marvell-prv-ks \
 "
