@@ -16,6 +16,5 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     libvirt \
     qemu \
     strongswan \
-    iptables \
     ${@bb.utils.contains("MACHINE_ENDIANNESS", "le", "docker", "", d)} \
 "
