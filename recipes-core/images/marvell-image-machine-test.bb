@@ -17,4 +17,5 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     qemu \
     strongswan \
     ${@bb.utils.contains("MACHINE_ENDIANNESS", "le", "docker", "", d)} \
+    cryptsetup \
 "
