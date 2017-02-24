@@ -18,4 +18,5 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     strongswan \
     ${@bb.utils.contains("MACHINE_ENDIANNESS", "le", "docker", "", d)} \
     cryptsetup \
+    e2fsprogs \
 "
