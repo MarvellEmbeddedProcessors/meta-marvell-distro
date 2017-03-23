@@ -2,6 +2,7 @@ DESCRIPTION = "A console-only image with applications for test"
 LICENSE = "MIT"
 
 IMAGE_FEATURES += "\
+    package-management \
     ssh-server-openssh \
     tools-profile \
 "
