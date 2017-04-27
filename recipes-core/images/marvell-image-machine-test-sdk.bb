@@ -21,4 +21,12 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     unfs3 \
     vim \
     zlib \
+    samba \
+    inetutils \
+    iperf3 \
+    ethtool \
+    arptables \
+    tcpdump \
+    alsa-utils \
+    mdadm \
 "
