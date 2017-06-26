@@ -1,0 +1,39 @@
+From 5f0704fc7546ff662e246558e20131d0c5824717 Mon Sep 17 00:00:00 2001
+From: Ken Ma <make@marvell.com>
+Date: Tue, 23 May 2017 16:52:55 +0800
+Subject: [PATCH 6/6] fix: gic: set vm gic version as host
+
+Current codes set default VM gic version to 2(gicV2), but if the real
+interrupt controller is 3(gicV3), then VM can not start up because VM
+gpic version and the real host gic version do not match.
+This patch sets default VM gic version to 0(same as host) so that later
+VM gic version will be probed as host correctly.
+
+Change-Id: I924b3592f5b89aad446fa128ae0ac5beaee8b9e3
+Signed-off-by: Ken Ma <make@marvell.com>
+Reviewed-on: http://vgitil04.il.marvell.com:8080/40439
+Reviewed-by: Omri Itach <omrii@marvell.com>
+Tested-by: Omri Itach <omrii@marvell.com>
+Signed-off-by: Neta Zur <neta@marvell.com>
+---
+ hw/arm/virt.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/hw/arm/virt.c b/hw/arm/virt.c
+index 44bbbea92b..d1ad559ddf 100644
+--- a/hw/arm/virt.c
++++ b/hw/arm/virt.c
+@@ -1275,8 +1275,8 @@ static void virt_instance_init(Object *obj)
+                                     "Set on/off to enable/disable using "
+                                     "physical address space above 32 bits",
+                                     NULL);
+-    /* Default GIC type is v2 */
+-    vms->gic_version = 2;
++    /* Set default GIC type as host, the version will be probed later */
++    vms->gic_version = 0;
+     object_property_add_str(obj, "gic-version", virt_get_gic_version,
+                         virt_set_gic_version, NULL);
+     object_property_set_description(obj, "gic-version",
+-- 
+2.11.0
+
