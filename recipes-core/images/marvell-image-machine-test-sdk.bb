@@ -29,4 +29,5 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     tcpdump \
     alsa-utils \
     mdadm \
+    sysstat \
 "
