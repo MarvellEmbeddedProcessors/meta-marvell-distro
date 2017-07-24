@@ -30,4 +30,8 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     alsa-utils \
     mdadm \
     sysstat \
+    lmbench \
+    memtester \
+    procps \
+    acpitool \
 "
