@@ -16,6 +16,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     lzo \
     lzop \
     mtd-utils \
+    mtd-utils-ubifs \
     ncurses \
     nfs-utils \
     unfs3 \
@@ -34,4 +35,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     memtester \
     procps \
     acpitool \
+    hexedit \
+    ifenslave \
+    xfsprogs \
 "
