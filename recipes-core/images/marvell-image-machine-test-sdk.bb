@@ -24,6 +24,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     zlib \
     samba \
     inetutils \
+    inetutils-tftpd \
     iperf3 \
     ethtool \
     arptables \
