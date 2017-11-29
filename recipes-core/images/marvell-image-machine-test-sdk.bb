@@ -17,6 +17,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     lzop \
     mtd-utils \
     mtd-utils-ubifs \
+    mtd-utils-jffs2 \
     ncurses \
     nfs-utils \
     unfs3 \
@@ -24,6 +25,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     zlib \
     samba \
     inetutils \
+    inetutils-ftp \
     inetutils-tftpd \
     iperf3 \
     ethtool \
@@ -39,4 +41,15 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     hexedit \
     ifenslave \
     xfsprogs \
+    btrfs-tools \
+    dosfstools \
+    watchdog \
+    dt \
+    htop \
+    stress \
+    smartmontools \
+    dos2unix \
+    lmsensors-sensord \
+    lmsensors-sensors \
+    lmsensors-sensorsdetect \
 "
