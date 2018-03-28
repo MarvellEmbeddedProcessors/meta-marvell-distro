@@ -52,4 +52,5 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     lmsensors-sensord \
     lmsensors-sensors \
     lmsensors-sensorsdetect \
+    devmem2 \
 "
